@@ -5,26 +5,26 @@ TypeScript is a programming language that builds on JavaScript by adding a featu
 <span style = "color: green" >TypeScript code is converted to JavaScript ,</span>
 making it compatible with existing JavaScript projects. It also offers additional features like interfaces, classes, enums, and generics for more structured and maintainable code. Overall, TypeScript provides tools to help developers write better and more reliable code, <span style="color: green">especially in larger projects. </spam>
 
-#Advantages of using TypeScript
+# Advantages of using TypeScript
 
-#####Static Typing:
+##### Static Typing:
 TypeScript introduces static typing, allowing developers to define the types of variables. This helps catch errors during development and improves code quality.
 
-#####Early Error Detection:
+##### Early Error Detection:
 TypeScript helps catch mistakes in your code before it even runs. By checking for errors during a process called "compile-time," which happens before the code is executed, developers can spot and fix issues early on.Reducing the chances of encountering bugs or unexpected behavior when the program is running.
 
-#####Improved Code Quality:
+##### Improved Code Quality:
 TypeScript allows developers to specify the types of data in their code. This makes the code clearer, easier to understand, and less prone to mistakes. As a result, the overall quality of the code improves. Additionally, because TypeScript provides a clear structure, it reduces the necessity for extensive comments in the code.
 
 Enhanced IDE Support: TypeScript integrates well with popular code editors, such as Visual Studio Code. This integration provides features like auto-completion, code navigation, and refactoring tools.
 
-#####Object-Oriented Programming Features:
+##### Object-Oriented Programming Features:
 TypeScript supports features like classes, interfaces, and inheritance, making it easier to structure and organize code in an object-oriented manner.
 
-#####Cross-Platform Development:
+##### Cross-Platform Development:
 TypeScript can be used for both client-side (browser) and server-side (Node.js) development, making it versatile for full-stack applications.
 
-##Types Examples
+## Types Examples
 
 <pre><code>
 type Name: "string"
@@ -67,7 +67,7 @@ onClick: () => void;
  onChange: (id: number) => void;
 </code></pre>
 
-##Function type syntax that takes an event
+## Function type syntax that takes an event
 
 <pre><code>
 onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -134,7 +134,7 @@ isastudent: true,
 };
 </code></pre>
 
-#Function Components
+# Function Components
 
 <pre><code>
 const App: React.FunctionComponent<{ message: string }> = ({ message }) => (
@@ -143,7 +143,7 @@ const App: React.FunctionComponent<{ message: string }> = ({ message }) => (
 );
 </code></pre>
 
-#Hooks
+# Hooks
 
 ## useState
 
@@ -154,7 +154,7 @@ const [state, setState] = useState(false);
 `state` is Inferred to be a boolean
 `setState` only takes booleans
 
-####TypeScript, when dealing with hooks that have initial values set to <span  style="color:red">null and undefiend</span><span style="color:green"> you can explicitly declare the type and use a union type </span> to allow for both the actual type and null or undefined.
+#### TypeScript, when dealing with hooks that have initial values set to <span  style="color:red">null and undefiend</span><span style="color:green"> you can explicitly declare the type and use a union type </span> to allow for both the actual type and null or undefined.
 
 ## Example
 
@@ -163,7 +163,7 @@ type MyStateType = string | null;
 const [myState, setMyState] = (useState < MyStateType) | (null > null);
 ```
 
-###Class Components
+### class Components
 
 <pre><code>
 type GreetProps = {
@@ -178,7 +178,7 @@ class Greet extends React.Components<GreetProps>{
 let el=<Greet age = {3}/>
 </code></pre>
 
-###Events
+### Events
 
 ```javascript
 const el = (
