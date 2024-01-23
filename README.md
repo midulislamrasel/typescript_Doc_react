@@ -26,22 +26,23 @@ TypeScript can be used for both client-side (browser) and server-side (Node.js) 
 
 ## Types Examples
 
-<pre><code>
+
+```javascript
 type Name: "string"
 
 FullName : Name = "Midul"
 
-</code></pre>
+ ```
 
 ## Array of a type
 
-<pre><code>
+```javascript
  const name: string[] = ["Midul", "Islam", "Rasel"];
-</code></pre>
+ ```
 
 ## Object of a type
 
-<pre><code>
+```javascript
    type FULLName = {
     names: "string";
     id: number;
@@ -53,35 +54,40 @@ FullName : Name = "Midul"
     id: 1245,
     isastudent: true,
   };
-</code></pre>
+ ```
 
 ## Function that doesn't take or return anything
 
-<pre><code>
+```javascript
+
 onClick: () => void;
-</code></pre>
+
+ ```
 
 ## Function with named prop
 
-<pre><code>
+```javascript
+
  onChange: (id: number) => void;
-</code></pre>
+
+ ```
 
 ## Function type syntax that takes an event
 
-<pre><code>
+```javascript
+
 onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-</code></pre>
+
+ ```
 
 ## Alternative function type syntax that takes an event
 
-<pre><code>
+```javascript
   onClick(event: React.MouseEvent<HTMLButtonElement>): void;
-</code></pre>
+ ```
 
 ## Optional Prop
-
-<pre><code>
+```javascript
 type FULLName = {
   name: string;
   isastudent?: boolean;
@@ -91,7 +97,7 @@ type FULLName = {
 const Details: FULLName = {
   name: "good",
 };
-</code></pre>
+ ```
 
 ## Interfaces and type
 
@@ -105,7 +111,7 @@ if you try to declare two types with the same name, you'll encounter an error.
 
 ## Example
 
-<pre><code>
+```javascript
 interface User {
   name: string;
 }
@@ -119,8 +125,10 @@ const user: User = {
   name: "John",
   age: 25,
 };
-</code></pre>
+ ```
 
+
+```javascript
 Inderface FULLName = {
 names: "string";
 id: number;
@@ -136,24 +144,28 @@ isastudent: true,
 
 # Function Components
 
-<pre><code>
+
+
+```javascript
+
 const App: React.FunctionComponent<{ message: string }> = ({ message }) => (
   <div>{message}</div>
 
 );
-</code></pre>
+ ```
 
 # Hooks
 
 ## useState
 
-<pre><code>
+```javascript
 const [state, setState] = useState(false);
-</code></pre>
 
+ 
 `state` is Inferred to be a boolean
 `setState` only takes booleans
-
+ 
+ ```
 #### TypeScript, when dealing with hooks that have initial values set to <span  style="color:red">null and undefiend</span><span style="color:green"> you can explicitly declare the type and use a union type </span> to allow for both the actual type and null or undefined.
 
 ## Example
@@ -165,7 +177,7 @@ const [myState, setMyState] = (useState < MyStateType) | (null > null);
 
 ### class Components
 
-<pre><code>
+```javascript
 type GreetProps = {
   age ? : number;
 }
@@ -176,7 +188,7 @@ class Greet extends React.Components<GreetProps>{
 }
 
 let el=<Greet age = {3}/>
-</code></pre>
+```
 
 ### Events
 
