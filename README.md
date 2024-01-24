@@ -146,7 +146,7 @@ isastudent: true,
 
 
 
-```javascript
+
 
 const App: React.FunctionComponent<{ message: string }> = ({ message }) => (
   <div>{message}</div>
