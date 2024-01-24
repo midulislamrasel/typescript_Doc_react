@@ -1,4 +1,4 @@
-# typescript_Doc_react
+
 # What is typeScript
 
 TypeScript is a programming language that builds on JavaScript by adding a feature called <span style = "color: green" >"Static Typing" </span> This means developers can define the types of variables, making it easier to catch errors during development.
@@ -142,11 +142,7 @@ isastudent: true,
 };
 </code></pre>
 
-# Function Components
-
-
-
-
+## Function Components
 
 const App: React.FunctionComponent<{ message: string }> = ({ message }) => (
   <div>{message}</div>
